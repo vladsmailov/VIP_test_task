@@ -20,7 +20,7 @@ class Product(Base):
     __tablename__ = "Product"
 
     created_at = Column(DATETIME, nullable=False)
-    updated_at = Column(DATETIME, nullable=False)
+    updated_at = Column(DATETIME, nullable=True)
     deleted_at = Column(DATETIME, nullable=True, default=None)
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     pid = Column(UUID, nullable=True, default=None)

@@ -38,7 +38,6 @@ class Report:
         for products in data:
             for product in products:
                 parsed_data.append(product)
-        import pdb; pdb.set_trace()
         return [parsed_data]
 
 
